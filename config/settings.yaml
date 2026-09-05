@@ -1,0 +1,10 @@
+application_settings:
+  event_page: "https://shop.axs.com/?c=axs&e=6414022407626854"  # AXS event page to open
+  use_proxy: true                                             # Enable proxy usage
+  proxy_check_concurrency: 20                                 # Number of proxies checked in parallel
+  proxy_file: "config/data/proxies.txt"                       # Path to the proxy list
+
+cloak_browser_settings:
+  headless: true                                              # Run browser without opening a visible window
+  version: "151.0.7922.108.3"                                # CloakBrowser Chromium version
+  license_key: ""                                             # Optional Pro license key, e.g. cb_...

@@ -1,0 +1,8 @@
+cloakbrowser[geoip]
+playwright
+loguru~=0.7.2
+PyYAML~=6.0.2
+pydantic~=2.8.2
+better-proxy
+aiohttp~=3.11.18
+aiohttp-socks

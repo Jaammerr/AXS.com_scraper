@@ -1,0 +1,19 @@
+services:
+  scraper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: axs-scraper
+
+    init: true
+    shm_size: "1gb"
+    stop_grace_period: 15s
+
+    volumes:
+      - ./config/data/proxies.txt:/app/config/data/proxies.txt:ro
+      - ./screenshots:/app/screenshots
+      - ./logs:/app/logs
+      - ./storage:/app/storage
+
+    restart: "no"
